@@ -21,3 +21,4 @@ window.onload = ()=>{
 
 cb11.onscroll = ()=>{
     nextImg( img++ % (max+1));
+}
