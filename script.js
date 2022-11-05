@@ -21,7 +21,7 @@ window.onload = ()=>{
 
 if(img <= 5){
     cb11.onscroll = ()=>{
-        nextImg( img++ % (max+1));
+        nextImg();
     }
 }
 
