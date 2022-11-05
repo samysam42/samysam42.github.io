@@ -14,14 +14,14 @@ function nextImg(img){
 }
 
 window.onload = ()=>{
-    if(img <=5){
-        for(let i=0; i<=3; i++){   
-            nextImg( img++ % (max+1));
-        }
+    for(let i=0; i<=3; i++){   
+        nextImg( img++ % (max+1));
     }
-    
 }
 
-cb11.onscroll = ()=>{
-    nextImg( img++ % (max+1));
+if(img <= 5){
+    cb11.onscroll = ()=>{
+        nextImg( img++ % (max+1));
+    }
 }
+
