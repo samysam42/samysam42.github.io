@@ -13,13 +13,10 @@ function nextImg(img){
         });
 }
 
-cb11.onscroll = ()=>{
-    for(let i=0; i<=3; i++){
-        if(i <= 5){
-            nextImg();
-        }
-    }
+window.onload = ()=>{
+    for(i=0; i<=5; i++){
+        nextImg();
+    };
 }
-
 
 
