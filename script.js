@@ -14,8 +14,12 @@ function nextImg(img){
 }
 
 window.onload = ()=>{
-    for(let i=0; i<=3; i++){   
-        nextImg();
+    for(let i=0; i<=3; i++){
+        if(i <= 5){
+            nextImg();
+        }
     }
 }
+
+
 
