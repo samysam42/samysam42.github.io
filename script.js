@@ -16,6 +16,7 @@ function nextImg(img){
 window.onload = ()=>{
     for(i=0; i<=5; i++){
         nextImg();
+        img++
     };
 }
 
