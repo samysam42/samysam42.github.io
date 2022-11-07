@@ -1,4 +1,4 @@
-let img = 1;
+let img = 0;
 const max = 5;
 const cb11 = document.getElementById("cb11");
 
@@ -14,11 +14,15 @@ function nextImg(img){
 }
 
 window.onload = ()=>{
-    for(let i=0; i<=5; i++){    
+    for(let i=0; i<=3; i++){    
         nextImg( img++ % (max));
     }
 }
 
 cb11.onscroll = ()=>{
-    nextImg( img++ % (max+1));
+    let largura = document.body.scrollWidth; 
+    let scrollPoint = window.scrollX + window.innerWidth;
+    if(scrollPoint >= largura){
+        nextImg( img++ % (max+1));
+    }   
 }
